@@ -1,0 +1,6 @@
+{
+	"appId": "com.miloguide.capacitorjs",
+	"appName": "milo-capacitor",
+	"webDir": "out",
+	"bundledWebRuntime": false
+}
