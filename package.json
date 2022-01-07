@@ -2,8 +2,11 @@
   "name": "capacitor-poc",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "build-mobile": "next build && next export &&  cap sync",
+    "run-ios": "cap run ios",
     "build": "next build",
+    "dev": "next dev",
+    "export": "next export",
     "start": "next start",
     "lint": "next lint"
   },
