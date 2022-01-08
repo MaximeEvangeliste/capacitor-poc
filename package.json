@@ -2,13 +2,14 @@
   "name": "capacitor-poc",
   "private": true,
   "scripts": {
-    "build-mobile": "next build && next export &&  cap sync",
-    "run-ios": "cap run ios",
-    "build": "next build",
-    "dev": "next dev",
+    "build:mobile": "next build && next export &&  cap sync",
+    "build:web": "next build",
+    "dev": "yarn cap sync && next dev",
     "export": "next export",
-    "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "run:android": "cap run android",
+    "run:ios": "cap run ios",
+    "start": "next start"
   },
   "dependencies": {
     "@capacitor/android": "^3.3.4",

@@ -35,3 +35,9 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# Build that fil every time
+capacitor.config.json
+
+# Server config for dev hott reloading
+dev-server-config.json
