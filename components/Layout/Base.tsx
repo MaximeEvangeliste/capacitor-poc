@@ -1,8 +1,8 @@
 import React from 'react';
-import { ThemeContext, ThemeProvider } from 'components/Providers/ThemeProvider';
+import { DeviceContext, DeviceProvider } from 'components/Providers/DeviceProvider';
 
 const BaseLayoutComponent: React.FC = ({ children }) => {
-  const { safeArea } = React.useContext(ThemeContext);
+  const { safeArea } = React.useContext(DeviceContext);
 
   // Just doing it like this for now...
   const styles = {
@@ -19,8 +19,8 @@ const BaseLayoutComponent: React.FC = ({ children }) => {
 
 export const BaseLayout: React.FC = ({ children }) => {
   return (
-    <ThemeProvider>
+    <DeviceProvider>
       <BaseLayoutComponent>{children}</BaseLayoutComponent>
-    </ThemeProvider>
+    </DeviceProvider>
   );
 };
