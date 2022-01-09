@@ -1,5 +1,6 @@
 import React from 'react';
 import { DeviceContext, DeviceProvider } from 'components/Providers/DeviceProvider';
+import { GeoLocationProvider } from 'components/Providers/GeoLocationProvider';
 
 const BaseLayoutComponent: React.FC = ({ children }) => {
   const { safeArea } = React.useContext(DeviceContext);
@@ -20,7 +21,9 @@ const BaseLayoutComponent: React.FC = ({ children }) => {
 export const BaseLayout: React.FC = ({ children }) => {
   return (
     <DeviceProvider>
-      <BaseLayoutComponent>{children}</BaseLayoutComponent>
+      <GeoLocationProvider>
+        <BaseLayoutComponent>{children}</BaseLayoutComponent>
+      </GeoLocationProvider>
     </DeviceProvider>
   );
 };
