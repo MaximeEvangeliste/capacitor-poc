@@ -1,15 +1,20 @@
 import { Select } from 'components/Select';
+import { Button } from 'components/Button';
+import { Text } from 'components/Text';
 import { BaseLayout } from 'components/Layout/Base';
-import Link from 'next/link';
+import { showAlert, showConfirm, showPrompt } from 'components/Modal';
+import { Navigation } from 'components/Navigation';
 
 export default function Home() {
   return (
     <BaseLayout>
-      <div>
-        <Link href="/about">about page</Link>
-        <h1 className="text-3xl font-bold underline ">sup</h1>
-      </div>
+      <Navigation></Navigation>
+      <Text>Select</Text>
       <Select />
+      <Text>Modals</Text>
+      <Button onClick={showAlert}>Alert</Button>
+      <Button onClick={showConfirm}>Confirm</Button>
+      <Button onClick={showPrompt}>Prompt</Button>
     </BaseLayout>
   );
 }

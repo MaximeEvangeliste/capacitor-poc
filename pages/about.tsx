@@ -1,13 +1,12 @@
 import { BaseLayout } from 'components/Layout/Base';
-import Link from 'next/link';
+import { Navigation } from 'components/Navigation';
+import { Text } from 'components/Text';
 
 export default function About() {
   return (
     <BaseLayout>
-      <div>
-        <Link href="/">home page</Link>
-        <h1 className="text-3xl font-bold underline">About Page</h1>
-      </div>
+      <Navigation />
+      <Text>About Page</Text>
     </BaseLayout>
   );
 }
