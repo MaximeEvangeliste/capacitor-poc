@@ -111,6 +111,11 @@
   resolved "https://registry.yarnpkg.com/@capacitor/device/-/device-1.1.1.tgz#f6ee5abf43c142c7954c04830db81a4542f25186"
   integrity sha512-JBRWABHILmJ8SWEKUEb886xnD/+Aqpp3eo7MyNCIty8lj0dBscR57sis5BiUG8eEBMsPtPgh6fvda34AlzZvVw==
 
+"@capacitor/dialog@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@capacitor/dialog/-/dialog-1.0.6.tgz#996ad8999d5aa639107ce45de6e4a88f771d0bc4"
+  integrity sha512-IzfiJv1Lxl+jnT+P6ky2Lj16qMEYssih69wFH+0lXM6NSyGht/RniBHmQ1hVuXIkw8FDT9o+a5wvYhm3svwfAw==
+
 "@capacitor/geolocation@^1.3.0":
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/@capacitor/geolocation/-/geolocation-1.3.0.tgz#092395f006adc4ed48cf19a9cb928c7d061b0ebf"
