@@ -7,6 +7,9 @@ type ButtonProps = ReactHTMLElementProps<HTMLButtonElement> & {
 
 export const Button: React.FC<ButtonProps> = (props) => {
   return (
-    <button className="flex align-middle justify-center py-4 px-8 bg-zinc-300 rounded-full cursor-pointer" {...props} />
+    <button
+      className="inline-flex align-middle justify-center py-3 px-7 bg-zinc-300 rounded-full cursor-pointer"
+      {...props}
+    />
   );
 };
