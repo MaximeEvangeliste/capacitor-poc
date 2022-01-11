@@ -39,6 +39,7 @@ export default function List() {
             {item.title} - {item.id}
           </h3>
           <p>{item.body}</p>
+          <img src="https://picsum.photos/200/300?grayscale" alt="" />
         </div>
       ))}
     </BaseLayout>
