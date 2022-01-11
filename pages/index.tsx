@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <BaseLayout>
       <Navigation></Navigation>
-      <Text>Select</Text>
+      <Text>test</Text>
       <Select />
       <Text>Modals</Text>
       <Button onClick={showAlert}>Alert</Button>

@@ -17,6 +17,7 @@ export const Navigation: React.FC = () => {
     <nav>
       <NavLink href="/">Home</NavLink>
       <NavLink href="/about">About</NavLink>
+      <NavLink href="/list">Long List</NavLink>
     </nav>
   );
 };
