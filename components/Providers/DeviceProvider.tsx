@@ -17,9 +17,9 @@ type DeviceContext = {
 export const DeviceContext = React.createContext<DeviceContext>({});
 
 export const DeviceProvider: React.FC = ({ children }) => {
-  const [safeArea, setSafeArea] = React.useState<DeviceContext['safeArea']>({});
-  const [info, setInfo] = React.useState<DeviceContext['info']>({});
-  const [language, setLanguage] = React.useState<DeviceContext['language']>({});
+  const [safeArea, setSafeArea] = React.useState<DeviceContext['safeArea']>({} as DeviceContext['safeArea']);
+  const [info, setInfo] = React.useState<DeviceContext['info']>({} as DeviceContext['info']);
+  const [language, setLanguage] = React.useState<DeviceContext['language']>({} as DeviceContext['language']);
 
   const getSafeArea = async () => {
     const { insets } = await SafeArea.getSafeAreaInsets();

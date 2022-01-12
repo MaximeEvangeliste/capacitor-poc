@@ -2,6 +2,7 @@ import { BaseLayout } from 'components/Layout/Base';
 import { Navigation } from 'components/Navigation';
 import { Text } from 'components/Text';
 import faker from 'faker';
+import Image from 'next/image';
 
 const data = new Array(10000)
   .fill(null)
@@ -39,7 +40,7 @@ export default function List() {
             {item.title} - {item.id}
           </h3>
           <p>{item.body}</p>
-          <img src="https://picsum.photos/200/300?grayscale" alt="" />
+          <Image src="https://picsum.photos/200/300?grayscale" alt="" />
         </div>
       ))}
     </BaseLayout>

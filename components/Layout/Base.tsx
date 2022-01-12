@@ -1,6 +1,8 @@
 import React from 'react';
 import { DeviceContext, DeviceProvider } from 'components/Providers/DeviceProvider';
 import { GeoLocationProvider } from 'components/Providers/GeoLocationProvider';
+import { I18nProvider, SupportedLocales } from 'components/Providers/I18nProvider';
+import { useRouter } from 'next/router';
 
 const BaseLayoutComponent: React.FC = ({ children }) => {
   const { safeArea } = React.useContext(DeviceContext);
@@ -19,11 +21,16 @@ const BaseLayoutComponent: React.FC = ({ children }) => {
 };
 
 export const BaseLayout: React.FC = ({ children }) => {
+  const router = useRouter();
+  const locale = router.locale as SupportedLocales;
+
   return (
-    <DeviceProvider>
-      <GeoLocationProvider>
-        <BaseLayoutComponent>{children}</BaseLayoutComponent>
-      </GeoLocationProvider>
-    </DeviceProvider>
+    <I18nProvider locale={locale}>
+      <DeviceProvider>
+        <GeoLocationProvider>
+          <BaseLayoutComponent>{children}</BaseLayoutComponent>
+        </GeoLocationProvider>
+      </DeviceProvider>
+    </I18nProvider>
   );
 };
