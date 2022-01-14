@@ -5,11 +5,10 @@ type ButtonProps = ReactHTMLElementProps<HTMLButtonElement> & {
   // rest of the props here...
 };
 
-export const Button: React.FC<ButtonProps> = (props) => {
-  return (
-    <button
-      className="inline-flex align-middle justify-center py-3 px-7 bg-zinc-300 rounded-full cursor-pointer"
-      {...props}
-    />
-  );
-};
+export function Button({ className, ...props }: ButtonProps) {
+  const classes =
+    'bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline ' +
+    className;
+
+  return <button className={classes} type="button" {...props} />;
+}

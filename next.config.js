@@ -6,4 +6,7 @@ module.exports = {
     defaultLocale: 'fr',
     localeDetection: false,
   },
+  images: {
+    domains: ['picsum.photos'],
+  },
 };

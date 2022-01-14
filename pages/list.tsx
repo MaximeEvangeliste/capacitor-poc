@@ -1,5 +1,4 @@
-import { BaseLayout } from 'components/Layout/Base';
-import { Navigation } from 'components/Navigation';
+import { BaseLayout } from 'components/Layout/BaseLayout';
 import { Text } from 'components/Text';
 import faker from 'faker';
 import Image from 'next/image';
@@ -32,7 +31,6 @@ export default function List() {
       }
       
       `}</style>
-      <Navigation />
       <Text>Long Page</Text>
       {data.map((item) => (
         <div key={item.id} className="post">
@@ -40,7 +38,7 @@ export default function List() {
             {item.title} - {item.id}
           </h3>
           <p>{item.body}</p>
-          <Image src="https://picsum.photos/200/300?grayscale" alt="" />
+          <Image width={200} height={300} src="https://picsum.photos/200/300?grayscale" alt="" />
         </div>
       ))}
     </BaseLayout>

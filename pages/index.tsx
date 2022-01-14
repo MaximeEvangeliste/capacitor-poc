@@ -2,14 +2,12 @@ import { Trans } from '@lingui/macro';
 import { Select } from 'components/Select';
 import { Button } from 'components/Button';
 import { Text } from 'components/Text';
-import { BaseLayout } from 'components/Layout/Base';
+import { BaseLayout } from 'components/Layout/BaseLayout';
 import { showAlert, showConfirm, showPrompt } from 'components/Modal';
-import { Navigation } from 'components/Navigation';
 
 export default function Home() {
   return (
     <BaseLayout>
-      <Navigation></Navigation>
       <Text>test</Text>
       <Select />
       <Text>Modals</Text>

@@ -14,10 +14,11 @@ const NavLink: React.FC<LinkProps> = ({ href, ...props }) => {
 
 export const Navigation: React.FC = () => {
   return (
-    <nav>
+    <nav className="p-4">
       <NavLink href="/">Home</NavLink>
       <NavLink href="/about">About</NavLink>
       <NavLink href="/list">Long List</NavLink>
+      <NavLink href="/todos">Todos</NavLink>
     </nav>
   );
 };

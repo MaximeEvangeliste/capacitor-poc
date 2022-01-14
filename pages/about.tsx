@@ -1,6 +1,5 @@
 import { Trans } from '@lingui/macro';
-import { BaseLayout } from 'components/Layout/Base';
-import { Navigation } from 'components/Navigation';
+import { BaseLayout } from 'components/Layout/BaseLayout';
 import { Text } from 'components/Text';
 
 export default function About() {
@@ -8,7 +7,6 @@ export default function About() {
 
   return (
     <BaseLayout>
-      <Navigation />
       <Text>About Page</Text>
       <Trans>Bonjour {name}, de quoi avez-vous envie aujourd'hui?</Trans>
     </BaseLayout>
